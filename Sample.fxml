@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.SampleController">
+  <bottom>
+    <!-- Unten funktionier -->
+    <AnchorPane onMouseClicked="#test" prefHeight="50.0" BorderPane.alignment="CENTER">
+      <children>
+        <HBox alignment="CENTER" minHeight="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <Label fx:id="LblBot" alignment="CENTER" text="Label">
+              <font>
+                <Font name="Arial Bold" size="30.0" fx:id="x1" />
+              </font>
+            </Label>
+          </children>
+        </HBox>
+      </children>
+    </AnchorPane>
+  </bottom>
+  <center>
+    <!-- Mitte mit den Image -->
+    <AnchorPane prefHeight="500.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+      <children>
+        <ImageView fx:id="IVMain" fitHeight="500.0" fitWidth="775.0" focusTraversable="false" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <image>
+            <Image url="@../../../PicShowerC%23/Pics/Default.jpg" />
+          </image>
+        </ImageView>
+      </children>
+    </AnchorPane>
+  </center>
+  <left>
+    <!-- Links funktionier  -->
+    <AnchorPane prefWidth="50.0" BorderPane.alignment="CENTER">
+      <children>
+        <HBox alignment="CENTER" minHeight="50.0" prefHeight="50.0" prefWidth="-1.0" rotate="90.0" AnchorPane.bottomAnchor="210.0" AnchorPane.leftAnchor="-214.5" AnchorPane.rightAnchor="-214.5" AnchorPane.topAnchor="210.0">
+          <children>
+            <Label fx:id="LblLeft" alignment="CENTER" font="$x1" text="Label Links" />
+          </children>
+        </HBox>
+      </children>
+    </AnchorPane>
+  </left>
+  <right>
+    <!-- Rechts funktionier nicht richtig -->
+    <AnchorPane prefWidth="50.0" BorderPane.alignment="CENTER">
+      <children>
+        <HBox alignment="CENTER" minWidth="50.0" prefHeight="50.0" prefWidth="-1.0" rotate="270.0" AnchorPane.bottomAnchor="213.0" AnchorPane.leftAnchor="-213.0" AnchorPane.rightAnchor="-206.0" AnchorPane.topAnchor="207.0">
+          <children>
+            <Label fx:id="LblRight" alignment="CENTER" font="$x1" text="Label Rechts" />
+          </children>
+        </HBox>
+      </children>
+    </AnchorPane>
+  </right>
+  <top>
+    <!-- Oben funktionier -->
+    <AnchorPane prefHeight="50.0" BorderPane.alignment="CENTER">
+      <children>
+        <HBox alignment="CENTER" minHeight="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <Label fx:id="LblTop" alignment="CENTER" font="$x1" rotate="180.0" text="Jo was geht wie lang kann ich " />
+          </children>
+        </HBox>
+      </children>
+    </AnchorPane>
+  </top>
+</BorderPane>
